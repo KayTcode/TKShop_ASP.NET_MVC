@@ -1,0 +1,11 @@
+﻿@{
+    if(ViewContext.RouteData.Values["controller"].ToString()=="Login"
+     && ViewContext.RouteData.Values["action"].ToString() == "Index")
+    {
+        Layout = "~Views/Shared/_Layout1.cshtml";
+    }
+    else
+    {
+        Layout = "~Views/Shared/_Layout.cshtml";
+    }
+}
